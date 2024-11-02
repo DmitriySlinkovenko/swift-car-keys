@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { SignUpButton } from "@clerk/nextjs";
 import { ArrowRightIcon } from "lucide-react";
-import Image from "next/image";
+import { ClerkIcon } from "../(marketing)/_icons/Clerk"
+import { NeonIcon } from "../(marketing)/_icons/Neon"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,6 +15,30 @@ export default function Home() {
         <SignUpButton>
           <Button className="text-lg py-6 rounded-xl flex gap-2">Get started for free <ArrowRightIcon className="size-5"/></Button>
         </SignUpButton>
+      </section>
+      <section className="bg-primary text-primary-foreground">
+        <div className="container py-16 flex flex-col gap-16 px-8 md:px-16">
+          <h2 className="text-3xl text-center text-balance">Trusted by the top modern companies</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-16">
+            <Link href="https://neon.tech" target="_blank"><NeonIcon /></Link>
+            <Link href="https://neon.tech" target="_blank"><NeonIcon /></Link>
+            <Link href="https://neon.tech" target="_blank"><NeonIcon /></Link>
+            <Link href="https://neon.tech" target="_blank"><NeonIcon /></Link>
+            <Link href="https://neon.tech" target="_blank"><NeonIcon /></Link>
+            <Link href="https://clerk.com" target="_blank"><ClerkIcon /></Link>
+            <Link href="https://clerk.com" target="_blank"><ClerkIcon /></Link>
+            <Link href="https://clerk.com" target="_blank"><ClerkIcon /></Link>
+            <Link href="https://clerk.com" target="_blank"><ClerkIcon /></Link>
+            <Link className="md:max-xl:hidden" href="https://clerk.com" target="_blank"><ClerkIcon /></Link>
+          </div>
+        </div>
+
+      </section>
+      <section className="px-8 py-16 bg-accent/5" id="pricing">
+        <h2 className="text-4xl text-center text-balance font-semibold mb-8">Pricing software which pays for itself 20x over</h2>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-screen-xl mx-auto">
+          
+        </div>
       </section>
     </>
   )
